@@ -198,7 +198,7 @@ function viewAllDepartments(){
 function viewAllRoles(){
 
     connection.query(
-        `SELECT role.id, role.job_title, role.salary, department.department_name FROM department LEFT JOIN department ON department_id = department.id`,
+        `SELECT role.id, role.job_title, role.salary, department.department_name FROM role LEFT JOIN department ON department_id = department.id`,
         function(error, response){
             if (error) throw error;
 
@@ -213,12 +213,13 @@ function viewAllRoles(){
 function updateEmployeeRole(){
     inquirer.prompt([
         {
-            type: "list",
+            type: "input",
             message: "Which employee would you like to update?",
             name: "whichEmployee",
-            choices: [
-
-            ]
         }
-    ])
+    ]).then( function(data){
+        connection.query(
+            
+        )
+    })
 }
