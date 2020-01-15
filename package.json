@@ -1,0 +1,26 @@
+{
+  "name": "employee-management-system",
+  "version": "1.0.0",
+  "description": "This application is an employee management system that allows users to interact with employee information using node, inquirer, and mySQL.sing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masonwyatt04/Employee-Management-System.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masonwyatt04/Employee-Management-System/issues"
+  },
+  "homepage": "https://github.com/masonwyatt04/Employee-Management-System#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "express": "^4.17.1",
+    "inquirer": "^7.0.3",
+    "mysql": "^2.17.1"
+  }
+}
